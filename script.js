@@ -4,7 +4,8 @@ if (!location.hash) {
   }
 const roomHash = location.hash.substring(1);
 
-// TODO: Replace with your own channel ID
+// ScaleDrone is used for signaling
+// need unique ScaleDrone ID
 const drone = new ScaleDrone('CZJpYbhaenPpzG6F');
 // Room name needs to be prefixed with 'observable-'
 const roomName = 'observable-' + roomHash;
